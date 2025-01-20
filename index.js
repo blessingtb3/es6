@@ -216,8 +216,8 @@ console.log("Comined object: " + objCombined);
 
 //cloning objects
 const objClone = {...objFirst};
-console.log("Cloned object 1: " + objClone)
-
+console.log("Cloned object 1: " + objClone);
+console.log("\n");
 
 
 
@@ -227,50 +227,14 @@ console.log("Cloned object 1: " + objClone)
 
 
 //Section 6: Classes
+console.log("Section 6: Classes");
 
-//Section 6.1 class implementation
-console.log("Section 6.1: Class implementation \n");
+//imports 
+import {cPerson} from './cPerson.js';
+import cTeacher, {promote} from './cTeacher.js';//importing teacher class from teacher module
+//import {promote} from './cTeacher.js';//importing promote function from teacher module
+//creating instances and calling their methods
+const p1 = new cPerson("Blessing");
+p1.walk();
 
-//Person class
-class classPerson {
-
-    //constructor
-    constructor(name){
-        this.name = name;
-    }
-
-    //methods
-    walk () {
-        console.log("Walk");
-    }
-}
-
-//creating an instance of the person
-const you = new classPerson("Blessing");
-
-
-
-
-
-
-
-
-
-//Section 6.2: Inheritance
-console.log("Section 6.2: Inheritance \n");
-
-//teacher subclass
-class Teacher extends classPerson{
-
-    //constructor 
-    constructor(name, degree){
-        super(name);//initializing the name property
-        this.degree = degree;
-    }
-
-    teach(){
-        console.log("teach");
-    }
-}
-
-const t1 = new Teacher("Marius");
+const t1 = new cTeacher("Zaheer, MSc");
