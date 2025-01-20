@@ -41,7 +41,7 @@ person[targetMember.value] = 'Kat';
 
 
 //Section 2.2: this keyword - returns a reference to the current object
-console.log("Section 2.2: this keword - returns a reference to the current object")
+console.log("Section 2.2: this keword - returns a reference to the current object");
 const thisImplementation = {
     name: 'Blessing',
     do(){
@@ -73,7 +73,7 @@ const square = function(number){
 }*/
 
 //Section 3.1: standard arrow function 
-console.log("Section 3.1: Standard arrow function")
+console.log("Section 3.1: Standard arrow function");
         //number goes to number * number
 const sqaure = number => number * number;
 console.log("Sqaure of 5 = " + sqaure(5));
@@ -123,7 +123,7 @@ console.log("\n");
 
 
 //section 3.2: Map array method
-console.log("Section 3.2: Map array method \n")
+console.log("Section 3.2: Map array method \n");
 //used to render lists in react, e.g. render a list of items
 
 //rendering a list of colors
@@ -180,7 +180,7 @@ const {street, city, country} = address;
 
 
 //Section 5: Spread operator ...arrayName
-console.log("Section 5.1: Spread operations with arrays \n")
+console.log("Section 5.1: Spread operations with arrays \n");
 const arrFirst = [1, 2, 3];
 const arrSecond = [4, 5, 6];
 console.log("First array: " + arrFirst);
@@ -203,7 +203,7 @@ console.log("\n");
 
 
 //Spreading objects
-console.log("Section 5.2: Spread operations with objects \n")
+console.log("Section 5.2: Spread operations with objects \n");
 const objFirst = {name: "Mosh"};
 const objSecond = {job: "Instructor"};
 console.log("First object: " + objFirst);
@@ -218,3 +218,59 @@ console.log("Comined object: " + objCombined);
 const objClone = {...objFirst};
 console.log("Cloned object 1: " + objClone)
 
+
+
+
+
+
+
+
+
+//Section 6: Classes
+
+//Section 6.1 class implementation
+console.log("Section 6.1: Class implementation \n");
+
+//Person class
+class classPerson {
+
+    //constructor
+    constructor(name){
+        this.name = name;
+    }
+
+    //methods
+    walk () {
+        console.log("Walk");
+    }
+}
+
+//creating an instance of the person
+const you = new classPerson("Blessing");
+
+
+
+
+
+
+
+
+
+//Section 6.2: Inheritance
+console.log("Section 6.2: Inheritance \n");
+
+//teacher subclass
+class Teacher extends classPerson{
+
+    //constructor 
+    constructor(name, degree){
+        super(name);//initializing the name property
+        this.degree = degree;
+    }
+
+    teach(){
+        console.log("teach");
+    }
+}
+
+const t1 = new Teacher("Marius");
