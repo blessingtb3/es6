@@ -1,4 +1,20 @@
 # es6
+
+ECMAScript (often abbreviated as ES) is the standard specification that JavaScript (JS) is based on. Therefore, you can say that **JavaScript is an implementation of ECMAScript**. 
+
+### Explanation:
+- **ECMAScript**: It is a scripting language specification standardized by ECMA International. The specification outlines the core features, syntax, and semantics of the language.
+- **JavaScript**: It is a programming language that implements the ECMAScript standard along with additional features and APIs (such as the Document Object Model, or DOM) that are specific to web development.
+
+In summary, **JavaScript is part of ECMAScript**, as it adheres to the ECMAScript standards while also extending them with additional capabilities.
+
+
+
+
+
+
+
+
 ES6 essentials  
 
 In this section we are going to cover essential js features that we are going to use in react applications, such as: 
